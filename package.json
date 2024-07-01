@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "rsbuild build",
-    "dev": "NODE_ENV=development rsbuild dev --open",
+    "build": "RSDOCTOR=true rsbuild build",
+    "dev": "RSDOCTOR=true rsbuild dev --open",
     "format": "prettier --write .",
     "preview": "rsbuild preview"
   },
@@ -15,6 +15,8 @@
   "devDependencies": {
     "@rsbuild/core": "^0.7.4",
     "@rsbuild/plugin-react": "^0.7.4",
+    "@rsbuild/plugin-svgr": "^0.7.9",
+    "@rsdoctor/rspack-plugin": "^0.3.5",
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
