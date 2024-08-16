@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "RSDOCTOR=true rsbuild build",
-    "dev": "RSDOCTOR=true rsbuild dev --open",
+    "build": "cli build",
+    "dev": "cli dev",
     "format": "prettier --write .",
     "preview": "rsbuild preview"
   },
@@ -13,14 +13,13 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "^0.7.4",
-    "@rsbuild/plugin-react": "^0.7.4",
-    "@rsbuild/plugin-svgr": "^0.7.9",
-    "@rsdoctor/rspack-plugin": "^0.3.5",
+    "@rsbuild/core": "1.0.1-beta.10",
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "cli": "../cli",
     "prettier": "^3.1.1",
-    "typescript": "^5.4.2"
+    "tsup": "^8.2.4",
+    "typescript": "^5.4.5"
   }
 }

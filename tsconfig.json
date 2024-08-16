@@ -15,7 +15,7 @@
     "useDefineForClassFields": true,
     "paths": {
       "/public/*": [
-        "public/*"
+        "./public/*"
       ]
     }
   },
